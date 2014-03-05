@@ -1,0 +1,17 @@
+[alias]
+    tree = log --oneline --decorate --graph
+    vimdiff = difftool
+[user]
+    name = James Won
+    email = jwon@linkedin.com
+[color]
+    ui = true
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[branch]
+    autosetuprebase = always
+[push]
+    default = simple
+
