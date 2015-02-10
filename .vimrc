@@ -2,8 +2,8 @@ set nocompatible               " be iMproved
 filetype on                    " required!
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " Bundles
     Bundle 'gmarik/vundle'
     " Misc
@@ -26,7 +26,7 @@ call vundle#rc()
         Bundle 'python.vim'
         Bundle 'nvie/vim-pep8'
         Bundle 'pyflakes.vim'
-        Bundle 'indent/python.vim'
+call vundle#end()
 
 filetype plugin indent on     " required!
 
