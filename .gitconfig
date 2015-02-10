@@ -3,7 +3,7 @@
     vimdiff = difftool
 [user]
     name = James Won
-    email = github@jwon.me
+    email = me@jwon.me
 [color]
     ui = true
 [diff]
