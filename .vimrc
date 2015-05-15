@@ -1,34 +1,31 @@
-set nocompatible               " be iMproved
-filetype on                    " required!
-filetype off                   " required!
+" Required
+filetype off
+filetype plugin indent on
+syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" Bundles
-    Bundle 'gmarik/vundle'
+" Plugins
+    Plugin 'gmarik/vundle'
     " Misc
-        Bundle 'L9'
-        Bundle 'spacehi.vim'
+        Plugin 'spacehi.vim'
     "Buffer
-        Bundle 'lastpos.vim'
-        Bundle 'bufpos'
-        Bundle 'buftabs'
+        Plugin 'lastpos.vim'
+        Plugin 'bufpos'
+        Plugin 'buftabs'
     " Interface
-        Bundle 'molokai'
-        Bundle 'altercation/vim-colors-solarized.git'
-        Bundle 'scrooloose/nerdcommenter'
-        Bundle 'scrooloose/syntastic'
-        Bundle 'scrooloose/nerdtree'
-    " C/C++
-        Bundle 'a.vim'
-        Bundle 'taglist.vim'
+"        Plugin 'molokai'
+        Plugin 'altercation/vim-colors-solarized.git'
+        Plugin 'scrooloose/syntastic'
+        Plugin 'scrooloose/nerdtree'
+"        Plugin 'Valloric/YouCompleteMe'
     " Python/Django
-        Bundle 'python.vim'
-        Bundle 'nvie/vim-pep8'
-        Bundle 'pyflakes.vim'
+        Plugin 'python.vim'
+"        Plugin 'nvie/vim-pep8'
+"        Plugin 'pyflakes.vim'
+    " Scala
+        Plugin 'derekwyatt/vim-scala'
 call vundle#end()
-
-filetype plugin indent on     " required!
 
 " Settings
     " Tabs
@@ -67,8 +64,7 @@ filetype plugin indent on     " required!
         set t_Co=256
         set splitbelow
         set splitright
-
-        syntax on
+        set mouse=a
 
 " Status line
     function! FileSize()
@@ -89,10 +85,10 @@ filetype plugin indent on     " required!
     endfunction
 
     set laststatus=2
-    set statusline=\ 
+    set statusline=\
     set statusline+=%n:\ " buffer number
     set statusline+=%t " filename with full path
-    set statusline+=\ \ 
+    set statusline+=\ \
     set statusline+=%{&paste?'[paste]\ ':''}
     set statusline+=%{&fileencoding}
     set statusline+=\ \ %Y " type of file
@@ -112,18 +108,6 @@ filetype plugin indent on     " required!
     set directory=~/.vim/swp//,/tmp
 
 " Plugins
-    " Solarized
-        syntax enable
-        set term=xterm-256color
-        set t_ut=
-        set t_Co=256
-        set background=dark
-        let g:solarized_termtrans=1
-        let g:solarized_termcolors=16
-        "let g:solarized_visibility="high"
-        "let g:solarized_contrast="high"
-        colorscheme solarized
-
     " NERDTree
         nmap <Bs> :NERDTreeToggle<CR>
         let NERDTreeShowBookmarks=1
@@ -133,25 +117,17 @@ filetype plugin indent on     " required!
         let NERDTreeKeepTreeInNewTab=0
         let NERDTreeMinimalUI=1 " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
         let NERDTreeDirArrows=1 " Tells the NERD tree to use arrows instead of + ~ chars when displaying directories.
-
-    " Syntactic
-        let g:syntastic_cpp_compiler_options = '-std=c++0x'
-
-    " buftabs
-        :noremap <C-left> :bprev<CR>
-        :noremap <C-right> :bnext<CR>
-
-    " Tags
-        nmap <Del> :TlistToggle<CR>
-
-" Autocmds
-    autocmd FileType c,cpp set tabstop=8 | set shiftwidth=8 | set softtabstop=8 | set noexpandtab
-    autocmd FileType py set tabstop=4 | set shiftwidth=4 | set softtabstop=4 | set expandtab
-
-" mappings
-" toggle list mode
-nmap <LocalLeader>tl :set list!<cr>
-" toggle paste mode
-nmap <LocalLeader>pp :set paste!<cr>
-
-set mouse=a
+    " Solarized
+        syntax enable
+        set term=xterm-256color
+        set t_ut=
+        set t_Co=256
+        set background=dark
+        let g:solarized_termtrans=1
+        let g:solarized_termcolors=16
+"        let g:solarized_contrast="high"
+        colorscheme solarized
+    " Spacehi
+        autocmd syntax * SpaceHi
+    " vim-scala (shouldnt need this, but fix from: https://github.com/derekwyatt/vim-scala/issues/75
+        autocmd BufRead,BufNewFile *.scala set filetype=scala
