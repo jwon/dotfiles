@@ -18,7 +18,7 @@ call vundle#begin()
         Plugin 'altercation/vim-colors-solarized.git'
         Plugin 'scrooloose/syntastic'
         Plugin 'scrooloose/nerdtree'
-"        Plugin 'Valloric/YouCompleteMe'
+        Plugin 'Valloric/YouCompleteMe'
     " Python/Django
         Plugin 'python.vim'
 "        Plugin 'nvie/vim-pep8'
