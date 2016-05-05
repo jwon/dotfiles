@@ -18,11 +18,8 @@ call vundle#begin()
         Plugin 'altercation/vim-colors-solarized.git'
         Plugin 'scrooloose/syntastic'
         Plugin 'scrooloose/nerdtree'
-        Plugin 'Valloric/YouCompleteMe'
     " Python/Django
         Plugin 'python.vim'
-"        Plugin 'nvie/vim-pep8'
-"        Plugin 'pyflakes.vim'
     " Scala
         Plugin 'derekwyatt/vim-scala'
 call vundle#end()
@@ -131,3 +128,9 @@ call vundle#end()
         autocmd syntax * SpaceHi
     " vim-scala (shouldnt need this, but fix from: https://github.com/derekwyatt/vim-scala/issues/75
         autocmd BufRead,BufNewFile *.scala set filetype=scala
+    " syntastic
+        let g:syntastic_python_checkers = ['flake8']
+        let g:syntastic_always_populate_loc_list = 1
+        let g:syntastic_auto_loc_list = 1
+        let g:syntastic_check_on_open = 1
+        let g:syntastic_check_on_wq = 0
