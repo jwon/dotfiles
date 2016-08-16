@@ -136,5 +136,6 @@ call vundle#end()
         let g:syntastic_check_on_open = 1
         let g:syntastic_check_on_wq = 0
     " hardmode
+        let g:HardMode_level = 'wannabe'
         autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
         nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
