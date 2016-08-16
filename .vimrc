@@ -6,9 +6,10 @@ syntax on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Plugins
-    Plugin 'gmarik/vundle'
+        Plugin 'gmarik/vundle'
     " Misc
         Plugin 'spacehi.vim'
+        Plugin 'wikitopian/hardmode'
     "Buffer
         Plugin 'lastpos.vim'
         Plugin 'bufpos'
@@ -134,3 +135,6 @@ call vundle#end()
         let g:syntastic_auto_loc_list = 1
         let g:syntastic_check_on_open = 1
         let g:syntastic_check_on_wq = 0
+    " hardmode
+        autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+        nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
