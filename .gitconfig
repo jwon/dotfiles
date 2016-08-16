@@ -1,5 +1,5 @@
 [alias]
-#    tree = log --oneline --decorate --graph
+    tree = log --oneline --decorate --graph
     vimdiff = difftool
 # From http://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
     lg = !"git lg1"
