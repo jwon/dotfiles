@@ -19,6 +19,7 @@ call vundle#begin()
         Plugin 'altercation/vim-colors-solarized.git'
         Plugin 'scrooloose/syntastic'
         Plugin 'scrooloose/nerdtree'
+        Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
     " Python/Django
         Plugin 'python.vim'
     " Scala
