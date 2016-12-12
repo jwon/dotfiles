@@ -134,8 +134,10 @@ call vundle#end()
         let g:syntastic_python_checkers = ['flake8']
         let g:syntastic_always_populate_loc_list = 1
         let g:syntastic_auto_loc_list = 1
+        let g:syntastic_mode_map = {
+            \ "mode": "active",
+            \ "passive_filetypes": ["java"] }
         let g:syntastic_check_on_open = 1
-        let g:syntastic_check_on_wq = 0
     " hardmode
         let g:HardMode_level = 'wannabe'
         autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
