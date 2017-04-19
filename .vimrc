@@ -1,12 +1,11 @@
 " Required
-filetype off
-filetype plugin indent on
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Plugins
-        Plugin 'gmarik/vundle'
+        Plugin 'VundleVim/Vundle.vim'
     " Misc
         Plugin 'spacehi.vim'
         Plugin 'wikitopian/hardmode'
@@ -15,16 +14,15 @@ call vundle#begin()
         Plugin 'bufpos'
         Plugin 'buftabs'
     " Interface
-"        Plugin 'molokai'
         Plugin 'altercation/vim-colors-solarized.git'
         Plugin 'scrooloose/syntastic'
         Plugin 'scrooloose/nerdtree'
-        Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+        Plugin 'vim-airline/vim-airline'
+        Plugin 'vim-airline/vim-airline-themes'
     " Python/Django
         Plugin 'python.vim'
-    " Scala
-        Plugin 'derekwyatt/vim-scala'
 call vundle#end()
+filetype plugin indent on
 
 " Settings
     " Tabs
@@ -41,6 +39,8 @@ call vundle#end()
         set incsearch
         set ignorecase
         set smartcase
+    " Status line
+        set laststatus=2
     " Misc
         set hidden
         set cursorline
@@ -64,43 +64,6 @@ call vundle#end()
         set splitbelow
         set splitright
         set mouse=a
-
-" Status line
-    function! FileSize()
-        let bytes = getfsize(expand("%:p"))
-        if bytes <= 0
-            return ""
-        endif
-        if bytes < 1024
-            return bytes . "B"
-        else
-            return (bytes / 1024) . "K"
-        endif
-    endfunction
-
-    function! CurDir()
-        let curdir = substitute(expand('%:p'), '/Users/jwon', '~', 'g')
-        return curdir
-    endfunction
-
-    set laststatus=2
-    set statusline=\
-    set statusline+=%n:\ " buffer number
-    set statusline+=%t " filename with full path
-    set statusline+=\ \
-    set statusline+=%{&paste?'[paste]\ ':''}
-    set statusline+=%{&fileencoding}
-    set statusline+=\ \ %Y " type of file
-    set statusline+=\ %3.3(%c%) " column number
-    set statusline+=\ \ %3.9(%l/%L%) " line / total lines
-    set statusline+=\ \ %2.3p%% " percentage through file in lines
-    set statusline+=\ \ %{FileSize()}
-    set statusline+=%< " where truncate if line too long
-    set statusline+=\ \ CurDir:%{CurDir()}
-
-" Ruler
-    set ruler
-    set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 
 " Temp dirs
     set backupdir=~/.vim/backup,/tmp
@@ -128,8 +91,6 @@ call vundle#end()
         colorscheme solarized
     " Spacehi
         autocmd syntax * SpaceHi
-    " vim-scala (shouldnt need this, but fix from: https://github.com/derekwyatt/vim-scala/issues/75
-        autocmd BufRead,BufNewFile *.scala set filetype=scala
     " syntastic
         let g:syntastic_python_checkers = ['flake8']
         let g:syntastic_always_populate_loc_list = 1
@@ -138,7 +99,25 @@ call vundle#end()
             \ "mode": "active",
             \ "passive_filetypes": ["java"] }
         let g:syntastic_check_on_open = 1
+"        let g:syntastic_check_on_wq = 0
     " hardmode
         let g:HardMode_level = 'wannabe'
         autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
         nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+    " vim-airline
+        let g:airline#extensions#tabline#enabled = 1
+        let g:airline_powerline_fonts = 1
+        let g:airline_theme='badwolf'
+
+" Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
+" function! PropagatePasteBufferToOSX()
+"     let @n=getreg('"')
+"     call system('pbcopy-remote', @n)
+"     echo "done"
+" endfunction
+" function! PopulatePasteBufferFromOSX()
+"     let @" = system('pbpaste-remote')
+"     echo "done"
+" endfunction
+" nnoremap <leader>bp :call PopulatePasteBufferFromOSX()<cr>
+" nnoremap <leader>bc :call PropagatePasteBufferToOSX()<cr>
