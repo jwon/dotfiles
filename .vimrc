@@ -7,7 +7,7 @@ call vundle#begin()
 " Plugins
         Plugin 'VundleVim/Vundle.vim'
     " Misc
-        Plugin 'spacehi.vim'
+        Plugin 'ntpeters/vim-better-whitespace'
         Plugin 'wikitopian/hardmode'
     "Buffer
         Plugin 'lastpos.vim'
@@ -87,8 +87,6 @@ filetype plugin indent on
         let g:solarized_termcolors=16
 "        let g:solarized_contrast="high"
         colorscheme solarized
-    " Spacehi
-        autocmd syntax * SpaceHi
     " syntastic
         let g:syntastic_python_checkers = ['flake8']
         let g:syntastic_always_populate_loc_list = 1
