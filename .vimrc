@@ -9,6 +9,7 @@ call vundle#begin()
     " Misc
         Plugin 'ntpeters/vim-better-whitespace'
         Plugin 'wikitopian/hardmode'
+        Plugin 'ctrlpvim/ctrlp.vim.git'
     "Buffer
         Plugin 'lastpos.vim'
     " Interface
@@ -17,8 +18,9 @@ call vundle#begin()
         Plugin 'scrooloose/nerdtree'
         Plugin 'vim-airline/vim-airline'
         Plugin 'vim-airline/vim-airline-themes'
-    " Python/Django
+    " Python
         Plugin 'python.vim'
+        Plugin 'davidhalter/jedi-vim.git'
 call vundle#end()
 filetype plugin indent on
 
