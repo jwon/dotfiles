@@ -11,8 +11,6 @@ call vundle#begin()
         Plugin 'wikitopian/hardmode'
     "Buffer
         Plugin 'lastpos.vim'
-        Plugin 'bufpos'
-        Plugin 'buftabs'
     " Interface
         Plugin 'altercation/vim-colors-solarized.git'
         Plugin 'scrooloose/syntastic'
