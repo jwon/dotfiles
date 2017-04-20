@@ -18,9 +18,13 @@ call vundle#begin()
         Plugin 'scrooloose/nerdtree'
         Plugin 'vim-airline/vim-airline'
         Plugin 'vim-airline/vim-airline-themes'
+        Plugin 'edkolev/tmuxline.vim'
+        Plugin 'edkolev/promptline.vim'
     " Python
         Plugin 'python.vim'
         Plugin 'davidhalter/jedi-vim.git'
+    " nginx
+        Plugin 'chr4/nginx.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -99,13 +103,16 @@ filetype plugin indent on
         let g:syntastic_check_on_open = 1
 "        let g:syntastic_check_on_wq = 0
     " hardmode
-        let g:HardMode_level = 'wannabe'
-        autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-        nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+        "let g:HardMode_level = 'wannabe'
+        "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+        "nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
     " vim-airline
         let g:airline#extensions#tabline#enabled = 1
         let g:airline_powerline_fonts = 1
         let g:airline_theme='badwolf'
+    " promptline
+        let g:promptline_theme = 'airline'
+        let g:promptline_preset = 'full'
 
 " Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
 " function! PropagatePasteBufferToOSX()
