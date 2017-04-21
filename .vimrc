@@ -111,7 +111,12 @@ filetype plugin indent on
         let g:airline_theme='solarized'
     " promptline
         let g:promptline_theme = 'airline'
-        let g:promptline_preset = 'full'
+        let g:promptline_preset = {
+                \'a' : [ promptline#slices#host() ],
+                \'b' : [ promptline#slices#user() ],
+                \'c' : [ promptline#slices#cwd() ],
+                \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status(), promptline#slices#python_virtualenv() ],
+                \'warn' : [ promptline#slices#last_exit_code() ]}"
 
 " Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
 " function! PropagatePasteBufferToOSX()
