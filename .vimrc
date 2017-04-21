@@ -25,6 +25,8 @@ call vundle#begin()
         Plugin 'davidhalter/jedi-vim.git'
     " nginx
         Plugin 'chr4/nginx.vim'
+    " Gradle
+        Plugin 'tfnico/vim-gradle'
 call vundle#end()
 filetype plugin indent on
 
@@ -62,6 +64,8 @@ filetype plugin indent on
         set splitbelow
         set splitright
         set mouse=a
+        set relativenumber
+        set number
 
 " Temp dirs
         set backupdir=~/.vim/backup,/tmp
