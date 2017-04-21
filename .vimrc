@@ -59,19 +59,13 @@ filetype plugin indent on
         set title
         set showcmd
         set nolist
-
-        if version >= 703
-            set colorcolumn=132
-        end
-
-        set t_Co=256
         set splitbelow
         set splitright
         set mouse=a
 
 " Temp dirs
-    set backupdir=~/.vim/backup,/tmp
-    set directory=~/.vim/swp//,/tmp
+        set backupdir=~/.vim/backup,/tmp
+        set directory=~/.vim/swp//,/tmp
 
 " Plugins
     " NERDTree
@@ -90,9 +84,10 @@ filetype plugin indent on
         set t_Co=256
         set background=dark
         let g:solarized_termtrans=1
-        let g:solarized_termcolors=16
+        let g:solarized_termcolors=256
 "        let g:solarized_contrast="high"
         colorscheme solarized
+        set noshowmode
     " syntastic
         let g:syntastic_python_checkers = ['flake8']
         let g:syntastic_always_populate_loc_list = 1
@@ -109,7 +104,7 @@ filetype plugin indent on
     " vim-airline
         let g:airline#extensions#tabline#enabled = 1
         let g:airline_powerline_fonts = 1
-        let g:airline_theme='badwolf'
+        let g:airline_theme='solarized'
     " promptline
         let g:promptline_theme = 'airline'
         let g:promptline_preset = 'full'
