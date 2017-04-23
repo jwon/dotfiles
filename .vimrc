@@ -2,33 +2,37 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" Plugins
-        Plugin 'VundleVim/Vundle.vim'
+" Load vim-plug if it doesn't exist already
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+endif
+
+call plug#begin()
     " Misc
-        Plugin 'ntpeters/vim-better-whitespace'
-        Plugin 'wikitopian/hardmode'
-        Plugin 'ctrlpvim/ctrlp.vim.git'
+        Plug 'ntpeters/vim-better-whitespace'
+"        Plug 'wikitopian/hardmode'
+        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        Plug 'junegunn/fzf.vim'
     "Buffer
-        Plugin 'lastpos.vim'
-    " Interface
-        Plugin 'altercation/vim-colors-solarized.git'
-        Plugin 'scrooloose/syntastic'
-        Plugin 'scrooloose/nerdtree'
-        Plugin 'vim-airline/vim-airline'
-        Plugin 'vim-airline/vim-airline-themes'
-        Plugin 'edkolev/tmuxline.vim'
-        Plugin 'edkolev/promptline.vim'
+        Plug 'lastpos.vim'
+    " Interfe
+        Plug 'altercation/vim-colors-solarized'
+        Plug 'scrooloose/syntastic'
+        Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        Plug 'edkolev/tmuxline.vim'
+        Plug 'edkolev/promptline.vim'
     " Python
-        Plugin 'python.vim'
-        Plugin 'davidhalter/jedi-vim.git'
+        Plug 'python.vim', { 'for': 'python' }
+        Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " nginx
-        Plugin 'chr4/nginx.vim'
+        Plug 'chr4/nginx.vim', {'for': 'nginx' }
     " Gradle
-        Plugin 'tfnico/vim-gradle'
-call vundle#end()
-filetype plugin indent on
+        Plug 'tfnico/vim-gradle'
+call plug#end()
+" plug#end() automatically runs:
+" 'filetype plugin indent on' and 'syntax enable'
 
 " Settings
     " Tabs
@@ -82,7 +86,6 @@ filetype plugin indent on
         let NERDTreeMinimalUI=1 " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
         let NERDTreeDirArrows=1 " Tells the NERD tree to use arrows instead of + ~ chars when displaying directories.
     " Solarized
-        syntax enable
         set term=xterm-256color
         set t_ut=
         set t_Co=256
