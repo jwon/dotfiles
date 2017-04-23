@@ -118,6 +118,13 @@ filetype plugin indent on
                 \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status(), promptline#slices#python_virtualenv() ],
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
 
+function! HideNumbers()
+    set nonumber
+    set norelativenumber
+endfunction
+
+command! -nargs=0 HideNumbers call HideNumbers()
+
 " Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
 " function! PropagatePasteBufferToOSX()
 "     let @n=getreg('"')
