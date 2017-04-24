@@ -128,6 +128,8 @@ endfunction
 
 command! -nargs=0 HideNumbers call HideNumbers()
 
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+
 " Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
 " function! PropagatePasteBufferToOSX()
 "     let @n=getreg('"')
