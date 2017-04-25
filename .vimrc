@@ -21,6 +21,8 @@ call plug#begin()
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
+    " Git
+        Plug 'tpope/vim-fugitive'
     " Python
         Plug 'python.vim', { 'for': 'python' }
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -126,7 +128,7 @@ endfunction
 
 command! -nargs=0 HideNumbers call HideNumbers()
 
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!{.git,.svn,fabric}/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
 " Reload ~/.vimrc after saving
 autocmd! bufwritepost .vimrc source %
