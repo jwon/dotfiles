@@ -13,6 +13,7 @@ call plug#begin()
 "        Plug 'wikitopian/hardmode'
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
+        Plug 'tpope/vim-surround'
     " Interface
         Plug 'altercation/vim-colors-solarized'
         Plug 'scrooloose/syntastic'
