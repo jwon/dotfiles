@@ -4,7 +4,7 @@ filetype off                  " required
 
 " Load vim-plug if it doesn't exist already
 if empty(glob("~/.vim/autoload/plug.vim"))
-    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+    execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.github.com/junegunn/vim-plug/master/plug.vim'
 endif
 
 call plug#begin()
@@ -25,7 +25,7 @@ call plug#begin()
     " Git
         Plug 'tpope/vim-fugitive'
     " Python
-        Plug 'python.vim', { 'for': 'python' }
+        Plug 'python-mode/python-mode', { 'for': 'python' }
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " nginx
         Plug 'chr4/nginx.vim', {'for': 'nginx' }
