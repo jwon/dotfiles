@@ -16,8 +16,6 @@ call plug#begin()
         Plug 'tpope/vim-surround'
     " Interface
         Plug 'altercation/vim-colors-solarized'
-        Plug 'scrooloose/syntastic'
-        Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/tmuxline.vim'
@@ -27,6 +25,7 @@ call plug#begin()
     " Python
         Plug 'python-mode/python-mode', { 'for': 'python' }
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+        Plug 'nvie/vim-flake8', { 'for': 'python' }
     " nginx
         Plug 'chr4/nginx.vim', {'for': 'nginx' }
     " Gradle
@@ -77,15 +76,14 @@ call plug#end()
         set directory=~/.vim/swp//,/tmp
 
 " Plugins
-    " NERDTree
-        nmap <Bs> :NERDTreeToggle<CR>
-        let NERDTreeShowBookmarks=1
-        let NERDTreeChDirMode=2
-        let NERDTreeQuitOnOpen=1
-        let NERDTreeShowHidden=1
-        let NERDTreeKeepTreeInNewTab=0
-        let NERDTreeMinimalUI=1 " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
-        let NERDTreeDirArrows=1 " Tells the NERD tree to use arrows instead of + ~ chars when displaying directories.
+    " vim-flake8
+        let g:flake8_show_in_file=1
+        autocmd BufWritePost *.py call Flake8()
+    " python-mode
+        let g:pymode_folding = 0
+        let g:pymode_options_max_line_length = 159
+        let g:pymode_lint_on_write = 0 " Done by vim-flake8
+        let g:pymode_rope_regenerate_on_write = 0
     " Solarized
         set term=xterm-256color
         set t_ut=
@@ -96,15 +94,6 @@ call plug#end()
 "        let g:solarized_contrast="high"
         colorscheme solarized
         set noshowmode
-    " syntastic
-        let g:syntastic_python_checkers = ['flake8']
-        let g:syntastic_always_populate_loc_list = 1
-        let g:syntastic_auto_loc_list = 1
-        let g:syntastic_mode_map = {
-            \ "mode": "active",
-            \ "passive_filetypes": ["java"] }
-        let g:syntastic_check_on_open = 1
-"        let g:syntastic_check_on_wq = 0
     " hardmode
         "let g:HardMode_level = 'wannabe'
         "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
