@@ -14,6 +14,7 @@ call plug#begin()
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
+        Plug 'sjl/gundo.vim'
     " Interface
         Plug 'altercation/vim-colors-solarized'
         Plug 'vim-airline/vim-airline'
@@ -78,6 +79,8 @@ call plug#end()
         set directory=~/.vim/swp//,/tmp
 
 " Plugins
+    " Gundo
+        nnoremap <F5> :GundoToggle<CR>
     " vim-flake8
         let g:flake8_show_in_file=1
         autocmd BufWritePost *.py call Flake8()
