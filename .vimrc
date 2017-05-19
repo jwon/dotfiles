@@ -21,6 +21,7 @@ call plug#begin()
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
+        Plug 'tpope/vim-vinegar'
     " Git
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
@@ -96,7 +97,6 @@ call plug#end()
         set background=dark
         let g:solarized_termtrans=1
         let g:solarized_termcolors=256
-"        let g:solarized_contrast="high"
         colorscheme solarized
         set noshowmode
     " hardmode
