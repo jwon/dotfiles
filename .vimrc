@@ -22,6 +22,7 @@ call plug#begin()
         Plug 'edkolev/promptline.vim'
     " Git
         Plug 'tpope/vim-fugitive'
+        Plug 'airblade/vim-gitgutter'
     " Python
         Plug 'python-mode/python-mode', { 'for': 'python' }
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
@@ -70,6 +71,7 @@ call plug#end()
         set mouse=a
         set relativenumber
         set number
+        set updatetime=250
 
 " Temp dirs
         set backupdir=~/.vim/backup,/tmp
