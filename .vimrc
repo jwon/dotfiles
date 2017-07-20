@@ -33,6 +33,8 @@ call plug#begin()
         Plug 'chr4/nginx.vim', {'for': 'nginx' }
     " Gradle
         Plug 'tfnico/vim-gradle'
+    "Jinja2
+        Plug 'glench/vim-jinja2-syntax'
 call plug#end()
 " plug#end() automatically runs:
 " 'filetype plugin indent on' and 'syntax enable'
