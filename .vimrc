@@ -26,7 +26,6 @@ call plug#begin()
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
     " Python
-        Plug 'python-mode/python-mode', { 'for': 'python' }
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
         Plug 'nvie/vim-flake8', { 'for': 'python' }
     " nginx
@@ -87,11 +86,6 @@ call plug#end()
     " vim-flake8
         let g:flake8_show_in_file=1
         autocmd BufWritePost *.py call Flake8()
-    " python-mode
-        let g:pymode_folding = 0
-        let g:pymode_options_max_line_length = 159
-        let g:pymode_lint_on_write = 0 " Done by vim-flake8
-        let g:pymode_rope_regenerate_on_write = 0
     " Solarized
         set term=xterm-256color
         set t_ut=
