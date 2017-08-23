@@ -23,16 +23,14 @@ call plug#begin()
         Plug 'edkolev/promptline.vim'
         Plug 'tpope/vim-vinegar'
     " Git
-        Plug 'tpope/vim-fugitive'
+"        Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
+    " Syntax
+        Plug 'sheerun/vim-polyglot'
     " Python
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
         Plug 'nvie/vim-flake8', { 'for': 'python' }
-    " nginx
-        Plug 'chr4/nginx.vim', {'for': 'nginx' }
-    " Gradle
-        Plug 'tfnico/vim-gradle'
-    "Jinja2
+    " Jinja2
         Plug 'glench/vim-jinja2-syntax'
 call plug#end()
 " plug#end() automatically runs:
