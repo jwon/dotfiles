@@ -22,6 +22,7 @@ call plug#begin()
         Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
         Plug 'mhinz/vim-startify'
+        Plug 'terryma/vim-smooth-scroll'
     " Git
 "        Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
@@ -127,6 +128,9 @@ call plug#end()
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
     " vim-startify
         let g:startify_custom_header = ['']
+    " vim-smooth-scroll
+        noremap <silent> <C-j> :call smooth_scroll#down(&scroll, 10, 2)<CR>
+        noremap <silent> <C-k> :call smooth_scroll#up(&scroll, 10, 2)<CR>
 
 function! HideNumbers()
     set nonumber
