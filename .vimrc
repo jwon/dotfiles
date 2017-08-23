@@ -53,30 +53,46 @@ call plug#end()
         set smartcase
     " Status line
         set laststatus=2
-    " Misc
+    " Allow hidden buffers
         set hidden
+    " Highlight current line
         set cursorline
+    " Show tab line
         set showtabline=1
+    " Word wrap settings
         set wrap
+        set nolist
+    " Encoding settings
         set encoding=utf-8
         set fileencodings=utf8,cp1251
+    " Command line completion
         set wildmenu
         set wildignore+=.hg,.git,.svn
         set wildignore+=*.DS_Store
         set wildignore+=*.pyc
+    " Set title of terminal window
         set title
+    " Show current incomplete command
         set showcmd
-        set nolist
+    " Split settings
         set splitbelow
         set splitright
+    " Mouse support
         set mouse=a
+    " Line numbers
         set relativenumber
         set number
+    " Length of time Vim waits after you stop typing
+    " before it triggers a plugin (used by vim-gitgutter)
         set updatetime=250
+    " Set comma to be the leader
+        let mapleader = ','
 
-" Temp dirs
+" Backup, swap, and undo
+        set undofile
         set backupdir=~/.vim/backup,/tmp
-        set directory=~/.vim/swp//,/tmp
+        set directory=~/.vim/swap,/tmp
+        set undodir=~/.vim/undo,/tmp
 
 " Plugins
     " Gundo
