@@ -21,7 +21,7 @@ call plug#begin()
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
-        Plug 'tpope/vim-vinegar'
+        Plug 'mhinz/vim-startify'
     " Git
 "        Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
@@ -82,7 +82,7 @@ call plug#end()
     " Gundo
         nnoremap <F6> :GundoToggle<CR>
     " vim-flake8
-        let g:flake8_show_in_file=1
+        let g:flake8_show_in_gutter=1
         autocmd BufWritePost *.py call Flake8()
     " Solarized
         set term=xterm-256color
@@ -109,6 +109,8 @@ call plug#end()
                 \'c' : [ promptline#slices#cwd() ],
                 \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status(), promptline#slices#python_virtualenv() ],
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
+    " vim-startify
+        let g:startify_custom_header = ['']
 
 function! HideNumbers()
     set nonumber
