@@ -123,16 +123,3 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 autocmd! bufwritepost .vimrc source %
 " jump to last used position in every file
 autocmd bufreadpost * normal `"
-
-" Making copy/paste work with remote tmux (https://gist.github.com/burke/5960455)
-" function! PropagatePasteBufferToOSX()
-"     let @n=getreg('"')
-"     call system('pbcopy-remote', @n)
-"     echo "done"
-" endfunction
-" function! PopulatePasteBufferFromOSX()
-"     let @" = system('pbpaste-remote')
-"     echo "done"
-" endfunction
-" nnoremap <leader>bp :call PopulatePasteBufferFromOSX()<cr>
-" nnoremap <leader>bc :call PropagatePasteBufferToOSX()<cr>
