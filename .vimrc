@@ -145,3 +145,5 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 autocmd! bufwritepost .vimrc source %
 " jump to last used position in every file
 autocmd bufreadpost * normal `"
+" .src files get set to xml filetype
+autocmd BufRead,BufNewFile *.src set filetype=xml
