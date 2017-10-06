@@ -98,6 +98,7 @@ call plug#end()
 " Plugins
     " Gundo
         nnoremap <F6> :GundoToggle<CR>
+        let g:gundo_prefer_python3 = 1
     " vim-flake8
         let g:flake8_show_in_gutter=1
         autocmd BufWritePost *.py call Flake8()
