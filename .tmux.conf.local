@@ -13,11 +13,6 @@
 # then uncomment the following line to make Meta + arrow keys mapping work
 #set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
 
-# focus window
-bind-key -n M-Left previous-window
-bind-key -n M-Right next-window
-
-
 # -- windows & pane creation ---------------------------------------------------
 
 # new window retains current path, possible values are:
@@ -269,3 +264,10 @@ bind C-Space send-prefix
 
 # move status line to top
 #set -g status-position top
+
+bind | split-window -h
+bind - split-window -v
+
+# focus window
+bind-key -n M-Left previous-window
+bind-key -n M-Right next-window
