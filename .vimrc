@@ -19,7 +19,7 @@ call plug#begin()
         Plug 'altercation/vim-colors-solarized'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
-        Plug 'edkolev/tmuxline.vim'
+"        Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
         Plug 'mhinz/vim-startify'
         Plug 'terryma/vim-smooth-scroll'
