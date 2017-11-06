@@ -101,6 +101,7 @@ call plug#end()
         let g:gundo_prefer_python3 = 1
     " vim-flake8
         let g:flake8_show_in_gutter=1
+        let g:flake8_cmd="/home/jwon/.local/bin/flake8"
         autocmd BufWritePost *.py call Flake8()
     " Solarized
         set term=xterm-256color
