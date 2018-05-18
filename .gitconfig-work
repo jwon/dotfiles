@@ -1,0 +1,4 @@
+# vim: syntax=gitconfig
+[user]
+    name = James Won
+    email = jwon@linkedin.com
