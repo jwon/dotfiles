@@ -29,9 +29,10 @@ call plug#begin()
         Plug 'airblade/vim-gitgutter'
     " Syntax
         Plug 'sheerun/vim-polyglot'
+    " Linting
+        Plug 'w0rp/ale'
     " Python
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-        Plug 'nvie/vim-flake8', { 'for': 'python' }
     " Jinja2
         Plug 'glench/vim-jinja2-syntax'
 call plug#end()
@@ -100,10 +101,6 @@ call plug#end()
     " Gundo
         nnoremap <F6> :GundoToggle<CR>
         let g:gundo_prefer_python3 = 1
-    " vim-flake8
-        let g:flake8_show_in_gutter=1
-        let g:flake8_cmd="/home/jwon/.local/bin/flake8"
-        autocmd BufWritePost *.py call Flake8()
     " Solarized
         set term=xterm-256color
         set t_ut=
