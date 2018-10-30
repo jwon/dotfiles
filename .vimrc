@@ -25,7 +25,7 @@ call plug#begin()
         Plug 'mhinz/vim-startify'
         Plug 'terryma/vim-smooth-scroll'
     " Git
-"        Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
     " Syntax
         Plug 'sheerun/vim-polyglot'
