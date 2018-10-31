@@ -11,7 +11,6 @@ endif
 call plug#begin()
     " Misc
         Plug 'ntpeters/vim-better-whitespace'
-"        Plug 'wikitopian/hardmode'
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
@@ -109,10 +108,6 @@ call plug#end()
         let g:solarized_termcolors=256
         colorscheme solarized
         set noshowmode
-    " hardmode
-        "let g:HardMode_level = 'wannabe'
-        "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-        "nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
     " vim-airline
         let g:airline#extensions#tabline#enabled = 1
         let g:airline_powerline_fonts = 1
@@ -146,3 +141,7 @@ autocmd! bufwritepost .vimrc source %
 autocmd bufreadpost * normal `"
 " .src files get set to xml filetype
 autocmd BufRead,BufNewFile *.src set filetype=xml
+
+" Buffer navigation with arrow keys
+nnoremap <left> :bprevious<CR>
+nnoremap <right>   :bnext<CR>
