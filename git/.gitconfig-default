@@ -1,3 +1,4 @@
+# vim: syntax=gitconfig
 [alias]
     tree = log --oneline --decorate --graph
     vimdiff = difftool
@@ -24,7 +25,11 @@
     editor = /usr/local/bin/vim
 [pull]
     rebase = true
-[includeIf "gitdir:~/work/"]
-    path = ~/play/dotfiles/.gitconfig-work
-[includeIf "gitdir:~/play/"]
-    path = ~/play/dotfiles/.gitconfig-play
+[user]
+    name = James Won
+    email = me@jwon.me
+    signingkey = 7661DC2BFE895590
+[commit]
+	gpgsign = false
+[gpg]
+	program = gpg

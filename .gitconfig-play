@@ -1,9 +1,0 @@
-# vim: syntax=gitconfig
-[user]
-    name = James Won
-    email = me@jwon.me
-    signingkey = 7661DC2BFE895590
-[commit]
-	gpgsign = true
-[gpg]
-	program = gpg
