@@ -19,7 +19,6 @@ call plug#begin()
         Plug 'altercation/vim-colors-solarized'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
-"        Plug 'edkolev/tmuxline.vim'
         Plug 'edkolev/promptline.vim'
         Plug 'mhinz/vim-startify'
         Plug 'terryma/vim-smooth-scroll'
@@ -63,9 +62,6 @@ call plug#end()
     " Word wrap settings
         set wrap
         set nolist
-    " Encoding settings
-        set encoding=utf-8
-        set fileencodings=utf8,cp1251
     " Command line completion
         set wildmenu
         set wildignore+=.hg,.git,.svn
