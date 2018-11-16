@@ -125,6 +125,9 @@ call plug#end()
     " vim-smooth-scroll
         noremap <silent> <C-j> :call smooth_scroll#down(&scroll, 10, 2)<CR>
         noremap <silent> <C-k> :call smooth_scroll#up(&scroll, 10, 2)<CR>
+    " ALE
+        let g:airline#extensions#ale#enabled = 1
+        let g:ale_open_list = 1
 
 function! HideNumbers()
     set nonumber
