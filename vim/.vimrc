@@ -10,17 +10,18 @@ endif
 
 call plug#begin()
     " Misc
-        Plug 'ntpeters/vim-better-whitespace'
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
+        Plug 'mhinz/vim-startify'
     " Interface
+        Plug 'ntpeters/vim-better-whitespace'
+        Plug 'Yggdroot/indentLine'
         Plug 'altercation/vim-colors-solarized'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/promptline.vim'
-        Plug 'mhinz/vim-startify'
         Plug 'terryma/vim-smooth-scroll'
     " Git
         Plug 'tpope/vim-fugitive'
@@ -124,6 +125,9 @@ call plug#end()
     " ALE
         let g:airline#extensions#ale#enabled = 1
         let g:ale_open_list = 1
+    " indentLine
+        let g:indentLine_char = '┆'
+        let g:indentLine_setColors = 0
 
 function! HideNumbers()
     set nonumber
