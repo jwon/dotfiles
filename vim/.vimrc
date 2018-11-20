@@ -9,13 +9,13 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-    " Misc
+    " Functionality
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
         Plug 'mhinz/vim-startify'
-    " Interface
+    " Aesthetic
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'Yggdroot/indentLine'
         Plug 'altercation/vim-colors-solarized'
@@ -34,6 +34,8 @@ call plug#begin()
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " Jinja2
         Plug 'glench/vim-jinja2-syntax'
+    " Always load vim-devicons as the very last one
+        Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " plug#end() automatically runs:
 " 'filetype plugin indent on' and 'syntax enable'
@@ -47,6 +49,8 @@ call plug#end()
         set smarttab
         set autoindent
         set backspace=indent,eol,start
+    " Encoding (must be set for vim-devicons)
+        set encoding=UTF-8
     " Search
         set hlsearch
         set incsearch
