@@ -30,6 +30,6 @@
     email = me@jwon.me
     signingkey = 7661DC2BFE895590
 [commit]
-	gpgsign = false
+	gpgsign = true
 [gpg]
 	program = gpg
