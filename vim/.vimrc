@@ -132,6 +132,8 @@ call plug#end()
     " indentLine
         let g:indentLine_char = '┆'
         let g:indentLine_setColors = 0
+    " vim-markdown
+        let g:vim_markdown_conceal = 0
 
 function! HideNumbers()
     set nonumber
