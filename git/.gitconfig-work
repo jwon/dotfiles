@@ -2,3 +2,5 @@
 [user]
     name = James Won
     email = jwon@linkedin.com
+[commit]
+    gpgsign = false
