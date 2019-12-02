@@ -22,7 +22,7 @@
 [push]
     default = simple
 [core]
-    editor = /usr/local/bin/vim
+    editor = vim
 [pull]
     rebase = true
 [user]
