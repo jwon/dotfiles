@@ -134,6 +134,7 @@ call plug#end()
         let g:indentLine_setColors = 0
     " vim-markdown
         let g:vim_markdown_conceal = 0
+        let g:vim_markdown_folding_disabled = 1
 
 function! HideNumbers()
     set nonumber
