@@ -32,3 +32,10 @@ git clone https://github.com/jwon/dotfiles.git
 cd ~/dotfiles
 stow git
 ```
+
+## Set up vim configs
+```
+cd ~/dotfiles
+stow vim
+```
+Then open `vim` to automatically setup/install the configuration.
