@@ -13,15 +13,19 @@ Ubuntu-based distro:
 sudo apt install stow
 ```
 
-## Install fonts
+## Install Nerd Fonts patched font
 OS X:
 ```
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font-mono
 ```
 Ubuntu-based distro:
+Download the patched Fira Code font files:
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 ```
-sudo apt install fonts-firacode
+mkdir ~/.local/share/fonts
+unzip FiraCode.zip -d ~/.local/share/fonts
+fc-cache -fv
 ```
 
 ## Check out dotfiles
