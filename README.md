@@ -3,6 +3,15 @@ This is probably only ever useful for myself but feel free to be inspired by wha
 
 To get started, please follow the steps below:
 
+## Install terminal of choice
+OS X:
+iTerm2
+
+Ubuntu-based distro:
+```
+sudo apt install kitty
+```
+
 ## Install GNU stow
 OS X:
 ```
