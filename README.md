@@ -62,7 +62,7 @@ https://github.com/settings/keys
 *Make sure you check out the dotfiles in the root of your home directory*
 ```
 cd ~
-git clone https://github.com/jwon/dotfiles.git
+git clone git@github.com:jwon/dotfiles.git
 ```
 
 ## Set up git configs
