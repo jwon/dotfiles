@@ -50,6 +50,14 @@ Import private key:
 keybase pgp export --secret | gpg --allow-secret-key --import
 ```
 
+## Generate new SSH Key for machine
+```
+ssh-keygen -t ed25519
+```
+
+## Add new SSH key to Github
+https://github.com/settings/keys
+
 ## Check out dotfiles
 *Make sure you check out the dotfiles in the root of your home directory*
 ```
