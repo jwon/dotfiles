@@ -77,3 +77,12 @@ cd ~/dotfiles
 stow vim
 ```
 Then open `vim` to automatically setup/install the configuration.
+
+## Install zsh
+OS X:
+*Should be automatically defaulted starting from Catalina*
+Ubuntu-based distro:
+```
+sudo apt install zsh
+chsh -s $(which zsh)
+```
