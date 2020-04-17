@@ -19,6 +19,10 @@ OS X:
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font-mono
 ```
+Ubuntu-based distro:
+```
+sudo apt install fonts-firacode
+```
 
 ## Check out dotfiles
 *Make sure you check out the dotfiles in the root of your home directory*
