@@ -19,3 +19,16 @@ OS X:
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font-mono
 ```
+
+## Check out dotfiles
+*Make sure you check out the dotfiles in the root of your home directory*
+```
+cd ~
+git clone https://github.com/jwon/dotfiles.git
+```
+
+## Set up git configs
+```
+cd ~/dotfiles
+stow git
+```
