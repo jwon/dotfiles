@@ -37,6 +37,19 @@ unzip FiraCode.zip -d ~/.local/share/fonts
 fc-cache -fv
 ```
 
+## Install Keybase
+https://keybase.io/download
+
+## Import gpg keys from keybase
+Import public key:
+```
+keybase pgp export | gpg --import
+```
+Import private key:
+```
+keybase pgp export --secret | gpg --allow-secret-key --import
+```
+
 ## Check out dotfiles
 *Make sure you check out the dotfiles in the root of your home directory*
 ```
