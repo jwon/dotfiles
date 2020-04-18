@@ -86,3 +86,4 @@ Ubuntu-based distro:
 sudo apt install zsh
 chsh -s $(which zsh)
 ```
+Also, install "Oh My Zsh" afterwards: https://ohmyz.sh/
