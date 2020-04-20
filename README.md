@@ -78,6 +78,12 @@ stow vim
 ```
 Then open `vim` to automatically setup/install the configuration.
 
+## Set up kitty configs
+```
+cd ~/dotfiles
+stow kitty
+```
+
 ## Install zsh
 OS X:
 *Should be automatically defaulted starting from Catalina*
