@@ -235,7 +235,6 @@ smart_borders on
 # Startup config #
 ##################
 exec_always xsetroot -solid "#88c0d0"
-assign [class="Firefox"] $ws1
 assign [class="TelegramDesktop"] $ws3
-exec firefox
 exec telegram-desktop
+exec autorandr --change
