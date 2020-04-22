@@ -133,6 +133,21 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+set $primary "DP1"
+set $secondary "eDP1"
+
+# Put workspaces on screens
+workspace $ws1 output $primary $secondary
+workspace $ws2 output $primary $secondary
+workspace $ws3 output $primary $secondary
+workspace $ws4 output $primary $secondary
+workspace $ws5 output $primary $secondary
+workspace $ws6 output $secondary
+workspace $ws7 output $secondary
+workspace $ws8 output $secondary
+workspace $ws9 output $secondary
+workspace $ws10 output $secondary
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
