@@ -1,3 +1,4 @@
+" ------------ PLUGINS ------------
 " Load vim-plug if it doesn't exist already
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -6,15 +7,15 @@ endif
 
 call plug#begin()
     " Functionality
-        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
         Plug 'mhinz/vim-startify'
+        Plug 'ntpeters/vim-better-whitespace'
     " Themes
         Plug 'arcticicestudio/nord-vim'
-    " Aesthetic
-        Plug 'ntpeters/vim-better-whitespace'
+    " Visual
         "Plug 'Yggdroot/indentLine'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
@@ -31,7 +32,7 @@ call plug#end()
 " plug#end() automatically runs:
 " 'filetype plugin indent on' and 'syntax enable'
 
-" Settings
+" ------------ SETTINGS ------------
     " Tabs
         set tabstop=8
         set softtabstop=4
@@ -71,14 +72,10 @@ call plug#end()
         let mapleader = "\<Space>"
     " True Colors
         set termguicolors
-
-" Backup, swap, and undo
+    " Backup, swap, and undo
         set undofile
 
-" Plugins
-    " Gundo
-        nnoremap <F6> :GundoToggle<CR>
-        let g:gundo_prefer_python3 = 1
+" ------------ PLUGIN SETTINGS ------------
     " Color Scheme
         colorscheme nord
     " vim-airline
@@ -102,15 +99,10 @@ call plug#end()
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
 
-function! HideNumbers()
-    set nonumber
-    "set norelativenumber
-endfunction
-
-command! -nargs=0 HideNumbers call HideNumbers()
-
+" ------------ COMMANDS / FUNCTIONS ------------
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!{.git,.svn,fabric}/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
+" ------------ AUTOCMD ------------
 " Reload ~/.vimrc after saving
 autocmd! bufwritepost init.vim source %
 " jump to last used position in every file
@@ -118,6 +110,11 @@ autocmd bufreadpost * normal `"
 " .src files get set to xml filetype
 autocmd BufRead,BufNewFile *.src set filetype=xml
 
+" ------------ REMAPS ------------
+" Gundo
+nnoremap <leader>u :GundoToggle<CR>
+" Toggle line numbers
+nnoremap <leader>n :set nonumber!<CR>
 " Buffer navigation with arrow keys
 nnoremap <left> :bprevious<CR>
 nnoremap <right>   :bnext<CR>
