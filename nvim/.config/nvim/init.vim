@@ -26,7 +26,8 @@ call plug#begin()
     " Git
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
-    " Syntax
+    " Language Support
+        Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         "Plug 'sheerun/vim-polyglot'
         "Plug 'glench/vim-jinja2-syntax'
     " Always load vim-devicons as the very last one
