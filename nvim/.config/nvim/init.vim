@@ -11,8 +11,10 @@ call plug#begin()
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
-        Plug 'mhinz/vim-startify'
+        "Plug 'mhinz/vim-startify'
         Plug 'ntpeters/vim-better-whitespace'
+        Plug 'preservim/nerdtree'
+        Plug 'Xuyuanp/nerdtree-git-plugin'
     " Themes
         Plug 'arcticicestudio/nord-vim'
     " Visual
@@ -91,7 +93,7 @@ call plug#end()
                 \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status(), promptline#slices#python_virtualenv() ],
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
     " vim-startify
-        let g:startify_custom_header = ['']
+        "let g:startify_custom_header = ['']
     " indentLine
         let g:indentLine_char = '┆'
         let g:indentLine_setColors = 0
@@ -110,11 +112,19 @@ autocmd bufreadpost * normal `"
 " .src files get set to xml filetype
 autocmd BufRead,BufNewFile *.src set filetype=xml
 
+" === NERDTree settings ===
+" Open NERDTree on vim start up
+autocmd vimenter * NERDTree | wincmd p
+" Close vim if only window open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " ------------ REMAPS ------------
 " Fuzzy Find
 nnoremap <leader>f :Find<CR>
 " Gundo
 nnoremap <leader>u :GundoToggle<CR>
+" NERDTree
+nnoremap <leader>t :NERDTreeToggle<CR>
 " Toggle line numbers
 nnoremap <leader>n :set nonumber!<CR>
 " Buffer navigation with arrow keys
