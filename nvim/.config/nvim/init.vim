@@ -15,6 +15,7 @@ call plug#begin()
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'preservim/nerdtree'
         Plug 'Xuyuanp/nerdtree-git-plugin'
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Themes
         Plug 'arcticicestudio/nord-vim'
     " Visual
