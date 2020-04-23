@@ -11,25 +11,25 @@ call plug#begin()
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
         Plug 'mhinz/vim-startify'
+    " Themes
+        Plug 'arcticicestudio/nord-vim'
     " Aesthetic
         Plug 'ntpeters/vim-better-whitespace'
-        Plug 'Yggdroot/indentLine'
-        Plug 'altercation/vim-colors-solarized'
+        "Plug 'Yggdroot/indentLine'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/promptline.vim'
-        Plug 'terryma/vim-smooth-scroll'
+        "Plug 'terryma/vim-smooth-scroll'
     " Git
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
     " Syntax
-        Plug 'sheerun/vim-polyglot'
+        "Plug 'sheerun/vim-polyglot'
+        "Plug 'glench/vim-jinja2-syntax'
     " Linting
-        Plug 'w0rp/ale'
+        "Plug 'w0rp/ale'
     " Python
-        Plug 'davidhalter/jedi-vim', { 'for': 'python' }
-    " Jinja2
-        Plug 'glench/vim-jinja2-syntax'
+        "Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " Always load vim-devicons as the very last one
         Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -74,6 +74,8 @@ call plug#end()
     " Set space to be the leader
         nnoremap <SPACE> <Nop>
         let mapleader = "\<Space>"
+    " True Colors
+        set termguicolors
 
 " Backup, swap, and undo
         set undofile
@@ -82,17 +84,12 @@ call plug#end()
     " Gundo
         nnoremap <F6> :GundoToggle<CR>
         let g:gundo_prefer_python3 = 1
-    " Solarized
-        set t_ut=
-        set t_Co=256
-        let g:solarized_termtrans=1
-        let g:solarized_termcolors=256
-        colorscheme solarized
-        set noshowmode
+    " Color Scheme
+        colorscheme nord
     " vim-airline
         let g:airline#extensions#tabline#enabled = 1
         let g:airline_powerline_fonts = 1
-        let g:airline_theme='solarized'
+        let g:airline_theme='nord'
     " promptline
         let g:promptline_theme = 'airline'
         let g:promptline_preset = {
