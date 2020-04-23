@@ -111,6 +111,8 @@ autocmd bufreadpost * normal `"
 autocmd BufRead,BufNewFile *.src set filetype=xml
 
 " ------------ REMAPS ------------
+" Fuzzy Find
+nnoremap <leader>f :Find<CR>
 " Gundo
 nnoremap <leader>u :GundoToggle<CR>
 " Toggle line numbers
