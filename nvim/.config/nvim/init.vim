@@ -113,8 +113,9 @@ autocmd bufreadpost * normal `"
 autocmd BufRead,BufNewFile *.src set filetype=xml
 
 " === NERDTree settings ===
-" Open NERDTree on vim start up
-autocmd vimenter * NERDTree | wincmd p
+" Open NERDTree if no files were specified on startup
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if only window open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
