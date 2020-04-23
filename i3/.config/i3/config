@@ -214,22 +214,11 @@ bar {
         status_command i3status
 }
 
-##################
-# i3-gaps config #
-##################
+###############
+# User config #
+###############
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 2
-
-gaps inner 5 gaps outer 5
-
-# Only enable gaps on a workspace when there is at least one container
-smart_gaps on
-
-# Only enable outer gaps when there is exactly one container
-smart_gaps inverse_outer
-
-# Activate smart borders (always)
-smart_borders on
 
 ##################
 # Startup config #
