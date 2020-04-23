@@ -19,7 +19,6 @@ call plug#begin()
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/promptline.vim'
-        "Plug 'terryma/vim-smooth-scroll'
     " Git
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
@@ -96,9 +95,6 @@ call plug#end()
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
     " vim-startify
         let g:startify_custom_header = ['']
-    " vim-smooth-scroll
-        noremap <silent> <C-j> :call smooth_scroll#down(&scroll, 10, 2)<CR>
-        noremap <silent> <C-k> :call smooth_scroll#up(&scroll, 10, 2)<CR>
     " indentLine
         let g:indentLine_char = '┆'
         let g:indentLine_setColors = 0
