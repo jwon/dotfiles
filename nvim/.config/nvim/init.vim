@@ -26,10 +26,6 @@ call plug#begin()
     " Syntax
         "Plug 'sheerun/vim-polyglot'
         "Plug 'glench/vim-jinja2-syntax'
-    " Linting
-        "Plug 'w0rp/ale'
-    " Python
-        "Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " Always load vim-devicons as the very last one
         Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -103,9 +99,6 @@ call plug#end()
     " vim-smooth-scroll
         noremap <silent> <C-j> :call smooth_scroll#down(&scroll, 10, 2)<CR>
         noremap <silent> <C-k> :call smooth_scroll#up(&scroll, 10, 2)<CR>
-    " ALE
-        let g:airline#extensions#ale#enabled = 1
-        let g:ale_open_list = 1
     " indentLine
         let g:indentLine_char = '┆'
         let g:indentLine_setColors = 0
