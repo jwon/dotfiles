@@ -69,10 +69,8 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    fzf
     git
     gpg-agent
-    ripgrep
     ssh-agent
 )
 
@@ -86,8 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
-export FZF_BASE="/home/jwon/.fzf"
+export EDITOR="vim"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -106,3 +103,4 @@ alias vim="nvim"
 source ~/.promptline.sh
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
