@@ -3,9 +3,11 @@ This is probably only ever useful for myself but feel free to be inspired by wha
 
 To get started, please follow the steps below:
 
-## Install terminal of choice
+## Install kitty
 OS X:
-iTerm2
+```
+brew cask install kitty
+```
 
 Ubuntu-based distro:
 ```
