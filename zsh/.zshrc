@@ -69,9 +69,11 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    fzf
     git
-    ssh-agent
+    gpg-agent
     ripgrep
+    ssh-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -85,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+export FZF_BASE="/home/jwon/.fzf"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
