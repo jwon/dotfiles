@@ -11,7 +11,6 @@ call plug#begin()
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
-        "Plug 'mhinz/vim-startify'
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'preservim/nerdtree'
         Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -20,7 +19,6 @@ call plug#begin()
     " Themes
         Plug 'arcticicestudio/nord-vim'
     " Visual
-        "Plug 'Yggdroot/indentLine'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/promptline.vim'
@@ -95,11 +93,6 @@ call plug#end()
                 \'c' : [ promptline#slices#cwd() ],
                 \'y' : [ promptline#slices#vcs_branch(), promptline#slices#git_status(), promptline#slices#python_virtualenv() ],
                 \'warn' : [ promptline#slices#last_exit_code() ]}"
-    " vim-startify
-        "let g:startify_custom_header = ['']
-    " indentLine
-        let g:indentLine_char = '┆'
-        let g:indentLine_setColors = 0
     " vim-markdown
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
