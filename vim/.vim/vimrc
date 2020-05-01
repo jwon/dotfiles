@@ -34,6 +34,8 @@ call plug#begin()
         Plug 'davidhalter/jedi-vim', { 'for': 'python' }
     " Jinja2
         Plug 'glench/vim-jinja2-syntax'
+    " Golang
+        Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     " Always load vim-devicons as the very last one
         Plug 'ryanoasis/vim-devicons'
 call plug#end()
