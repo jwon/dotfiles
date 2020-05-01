@@ -15,6 +15,7 @@ call plug#begin()
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'preservim/nerdtree'
         Plug 'Xuyuanp/nerdtree-git-plugin'
+        Plug 'majutsushi/tagbar'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Themes
         Plug 'arcticicestudio/nord-vim'
@@ -102,12 +103,14 @@ call plug#end()
     " vim-markdown
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
+    " tagbar
+        let g:tagbar_autofocus = 1
 
 " ------------ COMMANDS / FUNCTIONS ------------
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!{.git,.svn,fabric}/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 
 " ------------ AUTOCMD ------------
-" Reload ~/.vimrc after saving
+" Reload init.vim after saving
 autocmd! bufwritepost init.vim source %
 " jump to last used position in every file
 autocmd bufreadpost * normal `"
@@ -130,6 +133,8 @@ nnoremap <leader>u :GundoToggle<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 " Toggle line numbers
 nnoremap <leader>n :set nonumber!<CR>
+" Tagbar
+nnoremap <leader>b :TagbarToggle<CR>
 " Buffer navigation with arrow keys
 nnoremap <left> :bprevious<CR>
 nnoremap <right>   :bnext<CR>
