@@ -277,7 +277,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " ------------ REMAPS ------------
 " Fuzzy Find
-nnoremap <leader>f :Find<CR>
+" nnoremap <leader>f :Find<CR>
 " Gundo
 nnoremap <leader>u :GundoToggle<CR>
 " NERDTree
