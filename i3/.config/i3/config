@@ -223,7 +223,7 @@ for_window [class=".*"] border pixel 2
 ##################
 # Startup config #
 ##################
-exec_always xsetroot -solid "#88c0d0"
-assign [class="TelegramDesktop"] $ws3
+exec_always xsetroot -solid "#4c566a"
+assign [class="TelegramDesktop"] $ws6
 exec telegram-desktop
 exec autorandr --change
