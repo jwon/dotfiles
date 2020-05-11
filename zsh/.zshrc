@@ -75,6 +75,7 @@ plugins=(
     ripgrep
     ssh-agent
     vi-mode
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
