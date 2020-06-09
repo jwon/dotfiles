@@ -29,7 +29,8 @@ call plug#begin()
     " Language Support
         Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         "Plug 'sheerun/vim-polyglot'
-        "Plug 'glench/vim-jinja2-syntax'
+        Plug 'glench/vim-jinja2-syntax'
+        Plug 'chr4/nginx.vim'
     " Always load vim-devicons as the very last one
         Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -66,7 +67,7 @@ call plug#end()
     " Mouse support
         set mouse=a
     " Line numbers
-        " set relativenumber
+        set relativenumber
         set number
     " Length of time Vim waits after you stop typing
     " before it triggers a plugin (used by vim-gitgutter)
@@ -284,7 +285,7 @@ nnoremap <leader>u :GundoToggle<CR>
 " NERDTree
 nnoremap <leader>t :NERDTreeToggle<CR>
 " Toggle line numbers
-nnoremap <leader>n :set nonumber!<CR>
+nnoremap <leader>n :set number! relativenumber!<CR>
 " Tagbar
 nnoremap <leader>b :TagbarToggle<CR>
 " Buffer navigation with arrow keys
