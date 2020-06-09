@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export LESS="-F -X $LESS"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
