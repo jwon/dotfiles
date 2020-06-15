@@ -25,6 +25,9 @@
     editor = vim
 [pull]
     rebase = true
+[rebase]
+    stat = true
+    autoStash = true
 [user]
     name = James Won
     email = me@jwon.me
@@ -32,4 +35,4 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg
+    program = gpg
