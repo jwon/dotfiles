@@ -27,7 +27,7 @@ call plug#begin()
         Plug 'tpope/vim-fugitive'
         Plug 'airblade/vim-gitgutter'
     " Language Support
-        Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+        "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         "Plug 'sheerun/vim-polyglot'
         Plug 'glench/vim-jinja2-syntax'
         Plug 'chr4/nginx.vim'
@@ -98,6 +98,10 @@ call plug#end()
     " vim-markdown
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
+    " vim-go
+        " disable vim-go :GoDef shortcut (gd)
+        " this is handled by LanguageClient
+        " let g:go_def_mapping_enabled = 0
     " tagbar
         let g:tagbar_autofocus = 1
         let g:tagbar_type_go = {
