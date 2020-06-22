@@ -1,4 +1,9 @@
 {
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "json"
+    ],
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true
 }
