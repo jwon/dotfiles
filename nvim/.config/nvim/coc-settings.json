@@ -1,10 +1,4 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "typescript",
-        "json",
-        "go"
-    ],
     "python.jediEnabled": false,
     "python.linting.flake8Enabled": true,
     "go.goplsOptions": {
