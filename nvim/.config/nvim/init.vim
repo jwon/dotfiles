@@ -12,8 +12,8 @@ call plug#begin()
         Plug 'tpope/vim-surround'
         Plug 'sjl/gundo.vim'
         Plug 'ntpeters/vim-better-whitespace'
-        Plug 'preservim/nerdtree'
-        Plug 'Xuyuanp/nerdtree-git-plugin'
+        "Plug 'preservim/nerdtree'
+        "Plug 'Xuyuanp/nerdtree-git-plugin'
         Plug 'majutsushi/tagbar'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Themes
@@ -288,19 +288,21 @@ autocmd bufreadpost * normal `"
 " .src files get set to xml filetype
 autocmd BufRead,BufNewFile *.src set filetype=xml
 " === NERDTree settings ===
-" Open NERDTree if no files were specified on startup
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Close vim if only window open is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" " Open NERDTree if no files were specified on startup
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" " Close vim if only window open is NERDTree
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ------------ REMAPS ------------
-" Fuzzy Find
-" nnoremap <leader>f :Find<CR>
+" FZF remaps
+nnoremap <C-p> :Files<Cr>
+nnoremap <C-g> :Rg<Cr>
+
 " Gundo
 nnoremap <leader>u :GundoToggle<CR>
 " NERDTree
-nnoremap <leader>t :NERDTreeToggle<CR>
+" nnoremap <leader>t :NERDTreeToggle<CR>
 " Toggle line numbers
 nnoremap <leader>n :set number! relativenumber!<CR>
 " Tagbar
