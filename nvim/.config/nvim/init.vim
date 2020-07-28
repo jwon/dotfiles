@@ -23,9 +23,9 @@ call plug#begin()
         Plug 'vim-airline/vim-airline-themes'
         Plug 'edkolev/promptline.vim'
         Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+        Plug 'mhinz/vim-signify'
     " Git
         Plug 'tpope/vim-fugitive'
-        Plug 'airblade/vim-gitgutter'
     " Language Support
         "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
         Plug 'glench/vim-jinja2-syntax'
@@ -69,8 +69,8 @@ call plug#end()
         set relativenumber
         set number
     " Length of time Vim waits after you stop typing
-    " before it triggers a plugin (used by vim-gitgutter)
-        set updatetime=250
+    " before it triggers a plugin (used by vim-signify)
+        set updatetime=100
     " Set space to be the leader
         nnoremap <SPACE> <Nop>
         let mapleader = "\<Space>"
