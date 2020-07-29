@@ -25,6 +25,17 @@ Ubuntu-based distro:
 sudo apt install bat
 ```
 
+## Install ripgrep
+OS X:
+```
+brew install ripgrep
+```
+
+Ubuntu-based distro:
+```
+sudo apt install ripgrep
+```
+
 ## Install GNU stow
 OS X:
 ```
