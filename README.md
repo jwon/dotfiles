@@ -14,6 +14,17 @@ Ubuntu-based distro:
 sudo apt install kitty
 ```
 
+## Install bat
+OS X:
+```
+brew install bat
+```
+
+Ubuntu-based distro:
+```
+sudo apt install bat
+```
+
 ## Install GNU stow
 OS X:
 ```
