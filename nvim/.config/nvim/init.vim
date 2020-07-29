@@ -10,7 +10,7 @@ call plug#begin()
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
-        Plug 'sjl/gundo.vim'
+        Plug 'simnalamburt/vim-mundo'
         Plug 'ntpeters/vim-better-whitespace'
         "Plug 'preservim/nerdtree'
         "Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -80,6 +80,9 @@ call plug#end()
         set undofile
 
 " ------------ PLUGIN SETTINGS ------------
+    " Python Support
+    " cd $HOME && python3 -m venv venv && venv/bin/pip install pynvim
+        let g:python3_host_prog = expand('~/venv/bin/python')
     " Color Scheme
         colorscheme nord
     " vim-airline
@@ -300,7 +303,7 @@ nnoremap <C-p> :Files<Cr>
 nnoremap <C-g> :Rg<Cr>
 
 " Gundo
-nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>u :MundoToggle<CR>
 " NERDTree
 " nnoremap <leader>t :NERDTreeToggle<CR>
 " Toggle line numbers
