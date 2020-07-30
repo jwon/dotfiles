@@ -213,10 +213,6 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-" Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
@@ -321,7 +317,7 @@ endfunction
 
 " ------------ AUTOCMD ------------
 " Reload init.vim after saving
-autocmd! bufwritepost init.vim source %
+autocmd! BufWritePost init.vim source %
 " jump to last used position in every file
 autocmd bufreadpost * normal `"
 " .src files get set to xml filetype
@@ -351,3 +347,5 @@ nnoremap <left> :bprevious<CR>
 nnoremap <right>   :bnext<CR>
 " Restart coc
 nnoremap <leader>, :CocRestart<CR>
+" Format buffer using coc
+nnoremap <leader>f :Format<CR>
