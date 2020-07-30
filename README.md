@@ -83,27 +83,27 @@ ssh-keygen -t ed25519
 ## Add new SSH key to Github
 https://github.com/settings/keys
 
-## Check out dotfiles
+## Checkout dotfiles
 *Make sure you check out the dotfiles in the root of your home directory*
 ```
 cd ~
 git clone git@github.com:jwon/dotfiles.git
 ```
 
-## Set up git configs
+## Setup git configs
 ```
 cd ~/dotfiles
 stow git
 ```
 
-## Set up vim configs
+## Setup vim configs
 ```
 cd ~/dotfiles
 stow vim
 ```
 Then open `vim` to automatically setup/install the configuration.
 
-## Set up kitty configs
+## Setup kitty configs
 ```
 cd ~/dotfiles
 stow kitty
@@ -119,4 +119,4 @@ stow kitty
 sudo apt install zsh
 chsh -s $(which zsh)
 ```
-Also, install "Oh My Zsh" afterwards: https://ohmyz.sh/
+Install "Oh My Zsh" afterwards: https://ohmyz.sh/
