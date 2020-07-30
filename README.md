@@ -4,12 +4,12 @@ This is probably only ever useful for myself but feel free to be inspired by wha
 To get started, please follow the steps below:
 
 ## Install kitty
-OS X:
+### OS X:
 ```
 brew cask install kitty
 ```
 
-Ubuntu-based distro:
+### Ubuntu-based distro:
 ```
 sudo apt install kitty
 ```
