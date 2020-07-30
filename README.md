@@ -15,44 +15,44 @@ sudo apt install kitty
 ```
 
 ## Install bat
-OS X:
+### OS X:
 ```
 brew install bat
 ```
 
-Ubuntu-based distro:
+### Ubuntu-based distro:
 ```
 sudo apt install bat
 ```
 
 ## Install ripgrep
-OS X:
+### OS X:
 ```
 brew install ripgrep
 ```
 
-Ubuntu-based distro:
+### Ubuntu-based distro:
 ```
 sudo apt install ripgrep
 ```
 
 ## Install GNU stow
-OS X:
+### OS X:
 ```
 brew install stow
 ```
-Ubuntu-based distro:
+### Ubuntu-based distro:
 ```
 sudo apt install stow
 ```
 
 ## Install Nerd Fonts patched font
-OS X:
+### OS X:
 ```
 brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font-mono
 ```
-Ubuntu-based distro:
+### Ubuntu-based distro:
 
 Download the patched Fira Code font files:
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
@@ -110,9 +110,11 @@ stow kitty
 ```
 
 ## Install zsh
-OS X:
+### OS X:
+
 *Should be automatically defaulted starting from Catalina*
-Ubuntu-based distro:
+
+### Ubuntu-based distro:
 ```
 sudo apt install zsh
 chsh -s $(which zsh)
