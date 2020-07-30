@@ -314,7 +314,7 @@ function! Fzf_dev()
         \ 'source': <sid>files(),
         \ 'sink':   function('s:edit_file'),
         \ 'options': '-m ' . l:fzf_files_options,
-        \ 'down':    '40%' })
+        \ 'down':    '70%' })
 endfunction
 " ------------ COMMANDS / FUNCTIONS ------------
 

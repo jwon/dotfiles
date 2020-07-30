@@ -53,6 +53,7 @@ brew tap homebrew/cask-fonts
 brew cask install font-firacode-nerd-font-mono
 ```
 Ubuntu-based distro:
+
 Download the patched Fira Code font files:
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 ```
