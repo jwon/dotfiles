@@ -341,7 +341,7 @@ nnoremap <leader>u :MundoToggle<CR>
 " Toggle line numbers
 nnoremap <leader>n :set number! relativenumber!<CR>
 " Tagbar
-nnoremap <leader>b :TagbarToggle<CR>
+nnoremap <leader>t :TagbarToggle<CR>
 " Buffer navigation with arrow keys
 nnoremap <left> :bprevious<CR>
 nnoremap <right>   :bnext<CR>
