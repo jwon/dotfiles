@@ -243,6 +243,8 @@ tmux_conf_copy_to_os_clipboard=false
 
 # -- user customizations -------------------------------------------------------
 # this is the place to override or undo settings
+# Set 24-bit color override for kitty
+set-option -ga terminal-overrides ",xterm-kitty:Tc"
 
 # increase history size
 set -g history-limit 50000
