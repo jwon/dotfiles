@@ -1,7 +1,7 @@
 {
-    "diagnostic.errorSign": "✘",
-    "diagnostic.warningSign": "",
-    "diagnostic.infoSign": "",
+    "diagnostic.errorSign": "🔥",
+    "diagnostic.warningSign": "⚠️",
+    "diagnostic.infoSign": "ℹ️",
     "coc.preferences.formatOnSaveFiletypes": [
         "json",
         "go"
