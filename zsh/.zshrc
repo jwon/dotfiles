@@ -103,6 +103,8 @@ export EDITOR="vim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+alias get_nvim="(set -x && cd ~/bin && mv nvim.appimage nvim.appimage.$(date -I); curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -O && chmod +x nvim.appimage)"
+alias t="tmux a -d || tmux new -s main"
 
 # My personal theming
 source ~/.promptline.sh
