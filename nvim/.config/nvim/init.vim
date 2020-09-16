@@ -24,8 +24,7 @@ call plug#begin()
         Plug 'mhinz/vim-signify'
     " Git
         Plug 'tpope/vim-fugitive'
-    " Language Support
-        "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+    " Syntax
         Plug 'glench/vim-jinja2-syntax'
         Plug 'chr4/nginx.vim'
     " Always load vim-devicons as the very last one
@@ -98,25 +97,6 @@ call plug#end()
     " vim-markdown
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
-    " vim-go
-        "" use golang language server
-        "let g:go_def_mode='gopls'
-        "let g:go_info_mode='gopls'
-        "" Highlight more info
-        "let g:go_highlight_build_constraints = 1
-        "let g:go_highlight_extra_types = 1
-        "let g:go_highlight_fields = 1
-        "let g:go_highlight_functions = 1
-        "let g:go_highlight_methods = 1
-        "let g:go_highlight_operators = 1
-        "let g:go_highlight_structs = 1
-        "let g:go_highlight_types = 1
-        "" highlight same variable in view
-        "let g:go_auto_sameids = 1
-        "" show type info in statusbar
-        "let g:go_auto_type_info = 1
-        "" disable gd mapping of vim-go
-        "let g:go_def_mapping_enabled = 0
     " tagbar
         let g:tagbar_autofocus = 1
         let g:tagbar_type_go = {
