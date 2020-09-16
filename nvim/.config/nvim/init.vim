@@ -19,7 +19,6 @@ call plug#begin()
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'majutsushi/tagbar'
         Plug 'neomake/neomake'
-        Plug 'sbdchd/neoformat'
     " Themes
         Plug 'arcticicestudio/nord-vim'
     " Visual
