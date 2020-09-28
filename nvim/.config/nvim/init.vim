@@ -11,6 +11,7 @@ call plug#begin()
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
         Plug 'tpope/vim-commentary'
+        Plug 'junegunn/vim-peekaboo'
         Plug 'simnalamburt/vim-mundo'
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'majutsushi/tagbar'
