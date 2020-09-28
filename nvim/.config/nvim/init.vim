@@ -10,6 +10,7 @@ call plug#begin()
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
         Plug 'tpope/vim-surround'
+        Plug 'tpope/vim-commentary'
         Plug 'simnalamburt/vim-mundo'
         Plug 'ntpeters/vim-better-whitespace'
         Plug 'majutsushi/tagbar'
@@ -46,6 +47,8 @@ call plug#end()
         set hidden
     " Highlight current line
         set cursorline
+    " Show line ruler
+        set colorcolumn=120
     " Show tab line
         set showtabline=1
     " Word wrap settings
