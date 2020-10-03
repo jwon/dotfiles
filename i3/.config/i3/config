@@ -11,6 +11,9 @@
 
 set $mod Mod4
 
+# jwon - Set Programmer Dvorak
+exec_always --no-startup-id setxkbmap us,us ,dvp grp:alt_shift_toggle
+
 # jwon - Swap Caps Lock and Escape
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
