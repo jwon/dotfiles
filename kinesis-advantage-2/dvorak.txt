@@ -11,9 +11,5 @@
 [kp-lctrl]>[lwin]
 [kp-rwin]>[rctrl]
 [kp-rctrl]>[rwin]
-[kp-d]>[left]
-[kp4]>[down]
-[kp5]>[up]
-[kp6]>[right]
 {kp-q}>{speed5}{-lwin}{z}{+lwin}
 {kp-j}>{speed5}{-lwin}{y}{+lwin}
