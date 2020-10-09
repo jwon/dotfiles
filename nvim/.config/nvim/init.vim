@@ -323,3 +323,12 @@ nnoremap <right>   :bnext<CR>
 nnoremap <leader>, :CocRestart<CR>
 " Format buffer using coc
 nnoremap <leader>f :Format<CR>
+
+" Moving Lines
+" https://vimtricks.substack.com/p/vimtrick-moving-lines
+nnoremap <c-j> :m .+1<CR>==
+nnoremap <c-k> :m .-2<CR>==
+inoremap <c-j> <Esc>:m .+1<CR>==gi
+inoremap <c-k> <Esc>:m .-2<CR>==gi
+vnoremap <c-j> :m '>+1<CR>gv=gv
+vnoremap <c-k> :m '<-2<CR>gv=gv
