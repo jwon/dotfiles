@@ -120,3 +120,5 @@ sudo apt install zsh
 chsh -s $(which zsh)
 ```
 Install "Oh My Zsh" afterwards: https://ohmyz.sh/
+
+Install "zsh-autosuggestions" afterwards: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
