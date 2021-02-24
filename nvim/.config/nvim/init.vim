@@ -102,6 +102,7 @@ call plug#end()
         let g:vim_markdown_conceal = 0
         let g:vim_markdown_folding_disabled = 1
     " tagbar
+    " go get -u github.com/jstemmer/gotags
         let g:tagbar_autofocus = 1
         let g:tagbar_type_go = {
                 \ 'ctagstype' : 'go',
