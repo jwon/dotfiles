@@ -6,7 +6,7 @@ To get started, please follow the steps below:
 ## Install kitty
 ### OS X:
 ```
-brew cask install kitty
+brew install --cask kitty
 ```
 
 ### Ubuntu-based distro:
