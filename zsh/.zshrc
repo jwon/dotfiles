@@ -104,10 +104,14 @@ export EDITOR="vim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias get_nvim="(set -x && cd ~/bin && mv nvim.appimage nvim.appimage.$(date -I); curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -O && chmod +x nvim.appimage)"
-alias t="tmux a -d || tmux new -s main"
+alias t="tmux new-session -A"
 
 # My personal theming
 source ~/.promptline.sh
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Go development
+export GOPATH=~/go
+export PATH="$PATH:$GOPATH/bin"
