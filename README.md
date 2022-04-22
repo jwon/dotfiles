@@ -50,7 +50,7 @@ sudo apt install stow
 ### OS X:
 ```
 brew tap homebrew/cask-fonts
-brew cask install font-firacode-nerd-font-mono
+brew install --cask font-caskaydia-cove-nerd-font
 ```
 ### Ubuntu-based distro:
 
