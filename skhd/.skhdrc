@@ -2,10 +2,10 @@
 alt - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
 # focus window
-alt - h : yabai -m window --focus west
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
-alt - l : yabai -m window --focus east
+alt - d : yabai -m window --focus west
+alt - h : yabai -m window --focus south
+alt - t : yabai -m window --focus north
+alt - n : yabai -m window --focus east
 
 # swap window
 # shift + alt - h : yabai -m window --swap west
@@ -14,10 +14,10 @@ alt - l : yabai -m window --focus east
 # shift + alt - l : yabai -m window --swap east
 
 # move window
-shift + alt - h : yabai -m window --warp west
-shift + alt - j : yabai -m window --warp south
-shift + alt - k : yabai -m window --warp north
-shift + alt - l : yabai -m window --warp east
+shift + alt - d : yabai -m window --warp west
+shift + alt - h : yabai -m window --warp south
+shift + alt - t : yabai -m window --warp north
+shift + alt - n : yabai -m window --warp east
 
 # balance size of windows
 shift + alt - 0 : yabai -m space --balance
