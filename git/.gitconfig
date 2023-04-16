@@ -2,3 +2,5 @@
     path = ~/.gitconfig-default
 [includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
+[push]
+	autoSetupRemote = true
