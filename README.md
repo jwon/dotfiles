@@ -69,7 +69,9 @@ fc-cache -fv
 ```
 
 ## Install Keybase
-https://keybase.io/download
+```
+brew install --cask keybase
+```
 
 ## Import gpg keys from keybase
 Import public key:
