@@ -52,6 +52,12 @@ sudo apt install stow
 brew tap homebrew/cask-fonts
 brew install --cask font-caskaydia-cove-nerd-font
 ```
+
+or if you want to install your own font, but use Nerd Fonts for symbols only:
+
+1. Install `Symbols Nerd Font`: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/NerdFontsSymbolsOnly.zip
+2. Install your custom font. I currently use Comic Code: https://tosche.net/fonts/comic-code
+
 ### Ubuntu-based distro:
 
 Download the patched Fira Code font files:
