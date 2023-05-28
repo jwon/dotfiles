@@ -134,6 +134,12 @@ stow vim
 Then open `vim` to automatically setup/install the configuration.
 
 ## Setup kitty configs
+### OS X:
+```
+cd ~/dotfiles
+stow kitty-osx
+```
+### Ubuntu-based distro:
 ```
 cd ~/dotfiles
 stow kitty
