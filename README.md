@@ -107,6 +107,7 @@ export GPG_TTY
 ## Generate new SSH Key for machine
 ```
 ssh-keygen -t ed25519
+ssh-add ~/.ssh/id_ed25519
 ```
 
 ## Add new SSH key to Github
