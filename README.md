@@ -158,3 +158,15 @@ chsh -s $(which zsh)
 Install "Oh My Zsh" afterwards: https://ohmyz.sh/
 
 Install "zsh-autosuggestions" afterwards: https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+## Setup zsh configs
+### OS X:
+```
+cd ~/dotfiles
+stow zsh-osx
+```
+### Ubuntu-based distro:
+```
+cd ~/dotfiles
+stow zsh
+```
