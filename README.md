@@ -69,8 +69,23 @@ fc-cache -fv
 ```
 
 ## Install Keybase
+### OS X:
 ```
 brew install --cask keybase
+```
+### Ubuntu-based distro:
+```
+https://keybase.io/download
+```
+
+## Install GPG
+### OS X:
+```
+brew install gpg
+```
+### Ubuntu-based distro:
+```
+TBD
 ```
 
 ## Import gpg keys from keybase
