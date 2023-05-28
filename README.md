@@ -93,9 +93,15 @@ Import public key:
 ```
 keybase pgp export | gpg --import
 ```
+
 Import private key:
 ```
 keybase pgp export --secret | gpg --allow-secret-key --import
+```
+Make sure these env vars are set:
+```
+GPG_TTY=$(tty)
+export GPG_TTY
 ```
 
 ## Generate new SSH Key for machine
