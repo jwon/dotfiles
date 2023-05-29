@@ -237,3 +237,9 @@ brew install MonitorControl
 ```
 brew install --cask choosy
 ```
+
+## Install Discord
+### OS X:
+```
+brew install --cask discord
+```
