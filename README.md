@@ -180,3 +180,18 @@ brew install --cask logi-options-plus
 ```
 N/A
 ```
+
+## Install & Configure Yabai & skhd
+```
+brew install koekeishiya/formulae/yabai
+brew install koekeishiya/formulae/skhd
+cd ~/dotfiles
+stow skhd
+stow yabai
+```
+Restart afterwards and make sure everything is working
+
+## Install xbar
+```
+brew install --cask xbar
+```
