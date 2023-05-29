@@ -191,7 +191,8 @@ stow yabai
 ```
 Restart afterwards and make sure everything is working
 
-## Install xbar
+## Install & Configure xbar
 ```
 brew install --cask xbar
 ```
+Install Plugin: https://github.com/matryer/xbar-plugins/blob/main/Tools/yabai.365d.sh
