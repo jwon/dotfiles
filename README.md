@@ -174,6 +174,12 @@ brew install --cask logi-options-plus
 N/A
 ```
 
+## Install iStat Menus
+### OS X:
+```
+brew install --cask istat-menus
+```
+
 ## Install & Configure Yabai & skhd
 ```
 brew install koekeishiya/formulae/yabai
@@ -203,6 +209,9 @@ N/A
 ```
 
 ## Install LunarVim
+https://www.lunarvim.org/docs/installation
+Install cargo:
+https://doc.rust-lang.org/cargo/getting-started/installation.html
 ### OS X:
 ```
 Blah
