@@ -208,6 +208,12 @@ brew install neovim
 N/A
 ```
 
+## Install fzf
+### OS X:
+```
+brew install fzf
+```
+
 ## Install LunarVim
 https://www.lunarvim.org/docs/installation
 Install cargo:
