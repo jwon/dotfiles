@@ -214,15 +214,15 @@ N/A
 brew install fzf
 ```
 
+## Install cargo/rust
+https://doc.rust-lang.org/cargo/getting-started/installation.html
+
 ## Install LunarVim
 https://www.lunarvim.org/docs/installation
-Install cargo:
-https://doc.rust-lang.org/cargo/getting-started/installation.html
+
+## Install Brave
 ### OS X:
 ```
-Blah
+brew install --cask brave-browser
 ```
-### Ubuntu-based distro:
-```
-N/A
-```
+
