@@ -126,13 +126,6 @@ cd ~/dotfiles
 stow git
 ```
 
-## Setup vim configs
-```
-cd ~/dotfiles
-stow vim
-```
-Then open `vim` to automatically setup/install the configuration.
-
 ## Setup kitty configs
 ### OS X:
 ```
@@ -196,4 +189,25 @@ Restart afterwards and make sure everything is working
 brew install --cask xbar
 ```
 Install Plugin: https://github.com/matryer/xbar-plugins/blob/main/Tools/yabai.365d.sh
-For some reason I needed to use absolute paths for both yabai & jq to get the plugin to work. Probably a path issue. 
+For some reason I needed to use absolute paths for both yabai & jq to get the plugin to work. Probably a path issue.
+
+
+## Install Neovim
+### OS X:
+```
+brew install neovim
+```
+### Ubuntu-based distro:
+```
+N/A
+```
+
+## Install LunarVim
+### OS X:
+```
+Blah
+```
+### Ubuntu-based distro:
+```
+N/A
+```
