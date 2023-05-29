@@ -226,3 +226,14 @@ https://www.lunarvim.org/docs/installation
 brew install --cask brave-browser
 ```
 
+## Install MonitorControl
+### OS X:
+```
+brew install MonitorControl
+```
+
+## Install Choosy
+### OS X:
+```
+brew install --cask choosy
+```
