@@ -170,3 +170,13 @@ stow zsh-osx
 cd ~/dotfiles
 stow zsh
 ```
+
+## Install Logitech Options
+### OS X:
+```
+brew install --cask logi-options-plus
+```
+### Ubuntu-based distro:
+```
+N/A
+```
