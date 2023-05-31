@@ -243,3 +243,9 @@ brew install --cask choosy
 ```
 brew install --cask discord
 ```
+
+## Install Tresorit
+### OS X:
+```
+brew install --cask tresorit
+```
