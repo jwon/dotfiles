@@ -161,3 +161,8 @@ alt - p : yabai -m window --toggle sticky;\
 ctrl + alt - a : yabai -m space --layout bsp
 ctrl + alt - d : yabai -m space --layout float
 ctrl + alt - s : yabai -m space --layout stack
+
+# Restart yabai
+shift + alt - x : yabai --restart-service
+shift + alt - y : yabai --stop-service
+shift + alt - z : yabai --start-service
