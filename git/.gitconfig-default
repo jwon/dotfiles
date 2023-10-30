@@ -21,6 +21,7 @@
     autosetuprebase = always
 [push]
     default = simple
+	  autoSetupRemote = true
 [pull]
     rebase = true
 [rebase]
@@ -31,6 +32,8 @@
     email = me@jwon.me
     signingkey = 7C186E12A149CCB3
 [commit]
-	gpgsign = true
+	  gpgsign = true
 [gpg]
     program = gpg
+[fetch]
+	  prune = true
