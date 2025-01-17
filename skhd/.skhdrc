@@ -1,5 +1,5 @@
 # open terminal
-alt - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
+alt - return : open -n /Applications/Ghostty.app
 
 # focus window
 alt - d : yabai -m window --focus west
