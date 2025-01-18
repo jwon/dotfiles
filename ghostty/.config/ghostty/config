@@ -1,2 +1,11 @@
+# Theme
+theme = nord
+
+# Font config
 font-family = "Comic Code Ligatures"
 font-size=20
+
+# Unbind Mac-specific bindings
+# https://github.com/ghostty-org/ghostty/discussions/3207#discussioncomment-11713277
+keybind = alt+left=unbind
+keybind = alt+right=unbind
