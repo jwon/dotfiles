@@ -3,41 +3,20 @@ This is probably only ever useful for myself but feel free to be inspired by wha
 
 To get started, please follow the steps below:
 
-## Install Ghostty
-### OS X:
+## Package installation
+### OS X
 ```
 brew install --cask ghostty
-```
-
-## Install bat
-### OS X:
-```
 brew install bat
+brew install ripgrep
+brew install stow
+brew install --cask keybase
 ```
 
 ### Ubuntu-based distro:
 ```
 sudo apt install bat
-```
-
-## Install ripgrep
-### OS X:
-```
-brew install ripgrep
-```
-
-### Ubuntu-based distro:
-```
 sudo apt install ripgrep
-```
-
-## Install GNU stow
-### OS X:
-```
-brew install stow
-```
-### Ubuntu-based distro:
-```
 sudo apt install stow
 ```
 
