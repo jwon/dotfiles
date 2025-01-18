@@ -3,15 +3,10 @@ This is probably only ever useful for myself but feel free to be inspired by wha
 
 To get started, please follow the steps below:
 
-## Install kitty
+## Install Ghostty
 ### OS X:
 ```
-brew install --cask kitty
-```
-
-### Ubuntu-based distro:
-```
-sudo apt install kitty
+brew install --cask ghostty
 ```
 
 ## Install bat
@@ -126,16 +121,10 @@ cd ~/dotfiles
 stow git
 ```
 
-## Setup kitty configs
-### OS X:
+## Setup Ghostty configs
 ```
 cd ~/dotfiles
-stow kitty-osx
-```
-### Ubuntu-based distro:
-```
-cd ~/dotfiles
-stow kitty
+stow ghostty
 ```
 
 ## Install zsh
