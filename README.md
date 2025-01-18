@@ -7,6 +7,8 @@ To get started, please follow the steps below:
 ### OS X
 ```
 brew install --cask ghostty
+brew install less
+brew install git-delta
 brew install bat
 brew install ripgrep
 brew install stow
