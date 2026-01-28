@@ -6,13 +6,8 @@ To get started, please follow the steps below:
 ## Package installation
 ### OS X
 ```
-brew install --cask ghostty
-brew install less
-brew install git-delta
-brew install bat
-brew install ripgrep
-brew install stow
-brew install --cask keybase
+brew install --cask ghostty choosy keybase
+brew install less git-delta bat ripgrep stow
 ```
 
 ### Ubuntu-based distro:
