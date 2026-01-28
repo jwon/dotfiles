@@ -6,15 +6,13 @@ To get started, please follow the steps below:
 ## Package installation
 ### OS X
 ```
-brew install --cask ghostty choosy keybase
-brew install less git-delta bat ripgrep stow
+brew install --cask ghostty choosy discord monitorcontrol orion istat-menus logi-options-plus
+brew install less git-delta bat ripgrep stow neovim fzf
 ```
 
 ### Ubuntu-based distro:
 ```
-sudo apt install bat
-sudo apt install ripgrep
-sudo apt install stow
+sudo apt install bat ripgrep stow
 ```
 
 ## Install Nerd Fonts patched font
@@ -37,16 +35,6 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 mkdir ~/.local/share/fonts
 unzip FiraCode.zip -d ~/.local/share/fonts
 fc-cache -fv
-```
-
-## Install Keybase
-### OS X:
-```
-brew install --cask keybase
-```
-### Ubuntu-based distro:
-```
-https://keybase.io/download
 ```
 
 ## Install GPG
@@ -129,88 +117,5 @@ cd ~/dotfiles
 stow zsh
 ```
 
-## Install Logitech Options
-### OS X:
-```
-brew install --cask logi-options-plus
-```
-### Ubuntu-based distro:
-```
-N/A
-```
-
-## Install iStat Menus
-### OS X:
-```
-brew install --cask istat-menus
-```
-
-## Install & Configure Yabai & skhd
-```
-brew install koekeishiya/formulae/yabai
-brew install koekeishiya/formulae/skhd
-cd ~/dotfiles
-stow skhd
-stow yabai
-```
-Restart afterwards and make sure everything is working
-
-## Install & Configure xbar
-```
-brew install --cask xbar
-```
-Install Plugin: https://github.com/matryer/xbar-plugins/blob/main/Tools/yabai.365d.sh
-For some reason I needed to use absolute paths for both yabai & jq to get the plugin to work. Probably a path issue.
-
-
-## Install Neovim
-### OS X:
-```
-brew install neovim
-```
-### Ubuntu-based distro:
-```
-N/A
-```
-
-## Install fzf
-### OS X:
-```
-brew install fzf
-```
-
 ## Install cargo/rust
 https://doc.rust-lang.org/cargo/getting-started/installation.html
-
-## Install LunarVim
-https://www.lunarvim.org/docs/installation
-
-## Install Brave
-### OS X:
-```
-brew install --cask brave-browser
-```
-
-## Install MonitorControl
-### OS X:
-```
-brew install MonitorControl
-```
-
-## Install Choosy
-### OS X:
-```
-brew install --cask choosy
-```
-
-## Install Discord
-### OS X:
-```
-brew install --cask discord
-```
-
-## Install Tresorit
-### OS X:
-```
-brew install --cask tresorit
-```
