@@ -6,7 +6,7 @@ To get started, please follow the steps below:
 ## Package installation
 ### OS X
 ```
-brew install --cask ghostty choosy discord monitorcontrol orion istat-menus logi-options-plus rectangle hiddenbar 1password obsidian
+brew install --cask ghostty choosy discord monitorcontrol orion stats logi-options-plus rectangle hiddenbar 1password obsidian
 brew install less git-delta bat ripgrep stow neovim fzf
 ```
 
