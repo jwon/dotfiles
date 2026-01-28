@@ -6,8 +6,8 @@ To get started, please follow the steps below:
 ## Package installation
 ### OS X
 ```
-brew install --cask ghostty choosy discord monitorcontrol orion stats logi-options-plus rectangle hiddenbar 1password obsidian slack
-brew install less git-delta bat ripgrep stow neovim fzf
+brew install --cask ghostty choosy discord monitorcontrol orion stats logi-options-plus rectangle hiddenbar 1password obsidian slack keybase
+brew install less git-delta bat ripgrep stow neovim fzf gpg
 ```
 
 ### Ubuntu-based distro:
@@ -35,16 +35,6 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 mkdir ~/.local/share/fonts
 unzip FiraCode.zip -d ~/.local/share/fonts
 fc-cache -fv
-```
-
-## Install GPG
-### OS X:
-```
-brew install gpg
-```
-### Ubuntu-based distro:
-```
-TBD
 ```
 
 ## Import gpg keys from keybase
