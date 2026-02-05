@@ -7,7 +7,7 @@ To get started, please follow the steps below:
 ### OS X
 ```
 brew install --cask ghostty choosy discord monitorcontrol orion stats logi-options-plus rectangle hiddenbar 1password obsidian slack keybase
-brew install less git-delta bat ripgrep stow neovim fzf gpg bottom
+brew install less git-delta bat ripgrep stow neovim fzf gpg btop
 ```
 
 ### Ubuntu-based distro:
