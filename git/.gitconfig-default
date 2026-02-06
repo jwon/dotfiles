@@ -27,12 +27,6 @@
 [rebase]
     stat = true
     autoStash = true
-[user]
-    name = James Won
-    email = me@jwon.me
-    signingkey = 7C186E12A149CCB3
-[commit]
-    gpgsign = true
 [gpg]
     program = gpg
 [fetch]

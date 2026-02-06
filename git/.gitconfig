@@ -1,4 +1,7 @@
 [include]
     path = ~/.gitconfig-default
-[includeIf "gitdir:~/work/"]
     path = ~/.gitconfig-work
+[includeIf "gitdir:~/play/"]
+    path = ~/.gitconfig-personal
+[includeIf "gitdir:~/dotfiles/"]
+    path = ~/.gitconfig-personal
