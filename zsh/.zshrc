@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jwon/.oh-my-zsh"
@@ -103,7 +103,7 @@ export EDITOR="vim"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-alias get_nvim="(set -x && cd ~/bin && mv nvim.appimage nvim.appimage.$(date -I); curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -O && chmod +x nvim.appimage)"
+alias get_nvim="(set -x && cd ~/bin && mv nvim-linux-x86_64.appimage nvim-linux-x86_64.appimage.$(date -I); curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage -O && chmod +x nvim-linux-x86_64.appimage)"
 alias t="tmux new-session -A"
 
 # My personal theming
