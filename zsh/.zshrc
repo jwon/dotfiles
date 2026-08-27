@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/jwon/.oh-my-zsh"
@@ -72,7 +72,6 @@ plugins=(
     fzf
     git
     gpg-agent
-    ripgrep
     ssh-agent
     vi-mode
     zsh-autosuggestions
