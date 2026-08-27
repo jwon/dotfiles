@@ -12,7 +12,7 @@ brew install less git-delta bat ripgrep stow neovim fzf gpg btop
 
 ### Ubuntu-based distro:
 ```
-sudo apt install bat ripgrep stow git-delta
+sudo apt install bat ripgrep stow git-delta fzf
 ```
 
 ## Install Nerd Fonts patched font
