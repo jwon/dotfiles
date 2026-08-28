@@ -8,7 +8,7 @@ export ZSH="/home/jwon/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,7 +106,6 @@ alias get_nvim="(set -x && cd ~/bin && mv nvim-linux-x86_64.appimage nvim-linux-
 alias t="tmux new-session -A"
 
 # My personal theming
-source ~/.promptline.sh
 test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -114,3 +113,8 @@ test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 # Go development
 export GOPATH=~/go
 export PATH="$PATH:$GOPATH/bin"
+
+# starship
+eval "$(starship init zsh)"
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
