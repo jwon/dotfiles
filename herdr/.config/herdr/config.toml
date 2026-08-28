@@ -1,0 +1,20 @@
+onboarding = false
+
+[keys]
+# Move to the previous tab (left) and next tab (right)
+previous_tab = "alt+h"
+next_tab = "alt+l"
+next_agent = "alt+j"
+previous_agent = "alt+k"
+
+[ui]
+show_agent_labels_on_pane_borders = true
+
+status_indicators = "symbols"
+agent_panel_sort = "priority"
+[ui.toast]
+delivery = "terminal"
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
