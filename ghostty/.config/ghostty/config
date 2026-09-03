@@ -1,11 +1,26 @@
+## APPEARANCE ##
 # Theme
 theme = nord
 
 # Font config
 font-family = "Comic Code Ligatures"
-font-size=20
+font-size=16
 
+# Minimal macOS titlebar for cleaner appearance
+macos-titlebar-style = "hidden"
+macos-titlebar-proxy-icon = "hidden"
+
+# For transparency
+# background-opacity = 0.95
+
+## KEYBINDINGS ##
 # Unbind Mac-specific bindings
 # https://github.com/ghostty-org/ghostty/discussions/3207#discussioncomment-11713277
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+macos-option-as-alt = true
+
+
+## OTHER ##
+# Try to install the terminfo entry first and use the fallback if installation failed.
+shell-integration-features = ssh-terminfo,ssh-env
